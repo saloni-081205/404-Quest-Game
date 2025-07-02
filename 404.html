@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <title>404 Quest - The Lost Page Game</title>
+    <meta name="description" content="An interactive 404 page featuring a pixel art adventure game where you solve riddles to find your way back home.">
+    <link rel="stylesheet" href="/styles/quest.css">
+</head>
+<body class="game-page">
+    <div class="stars"></div>
+    
+    <div class="game-container">
+        <!-- Game Header -->
+        <div class="game-header">
+            <h1 class="game-title">404 QUEST</h1>
+            <p class="game-subtitle">The Lost Page Game</p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions" id="instructions">
+            <div class="instruction-header">
+                <span class="gamepad-icon">🎮</span>
+                <h3>Controls</h3>
+            </div>
+            <div class="instruction-list">
+                <p>1. 🡡 🡣 🡠 🡢 Arrow keys to move</p>
+                <p>2. Walk near the wizard to interact</p>
+                <p>3. Solve riddles to unlock the portal home</p>
+            </div>
+        </div>
+
+        <!-- Portal Message -->
+        <div class="portal-message" id="portalMessage" style="display: none;">
+            <h3>Portal Activated!</h3>
+            <p>You've mastered the digital realm! The portal to the homepage awaits below.</p>
+        </div>
+
+        <!-- Game Grid -->
+        <div class="game-grid-container">
+            <div class="game-grid" id="gameGrid">
+              <div class="player"><img src="/images/player.gif"></div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="homeButton" class="home-button" onclick="goHome()" style="display: none;">
+                🏠 Return Home
+            </button>
+            <button class="restart-button" onclick="restartGame()">
+                🔄 Restart Quest
+            </button>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress" id="progress">
+            Lost in the 404 Forest... Find the wizard to escape!
+        </div>
+
+        <!-- Dialog Box -->
+        <div class="dialog-overlay" id="dialogOverlay" style="display: none;">
+            <div class="dialog-box">
+                <button class="dialog-close" onclick="closeDialog()">×</button>
+                
+                <div class="wizard-info">
+                  <img src="/images/wizard.gif">
+                    <div class="wizard-details">
+                        <h3>Pixel Wizard</h3>
+                        <p>Guardian of the 404 Realm</p>
+                    </div>
+                </div>
+                
+                <div class="riddle-question" id="riddleQuestion"></div>
+                
+                <div class="riddle-options" id="riddleOptions"></div>
+                
+                <div class="dialog-instructions">
+                    Choose wisely, traveler. Press ESC to close.
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="game-footer">
+            <p>Lost in the digital wilderness? Navigate with arrow keys and seek the wisdom of the pixel wizard.</p>
+            <p>Built with ❤️ for adventurous souls who dare to wander off the beaten path.</p>
+        </div>
+    </div>
+
+    <script src="/scripts/quest.js"></script>
+</body>
+</html>
