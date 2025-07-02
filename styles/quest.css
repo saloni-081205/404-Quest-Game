@@ -15,7 +15,7 @@ body {
     font-family: 'Press Start 2P', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
     /*line-height: 1.6;
     overflow-x: hidden;*/
-    background-image: url("/images/forbidden_forest.jpg");
+    background-image: url("../images/forbidden_forest.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
