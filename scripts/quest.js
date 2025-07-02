@@ -143,7 +143,7 @@ function updateCharacters() {
     if (playerTile) {
         const player = document.createElement('div');
         player.className = `player ${gameState.player.isMoving ? 'moving' : ''}`;
-        player.innerHTML = `<img src="/images/player.gif" alt="Player character">`;
+        player.innerHTML = `<img src="images/player.gif" alt="Player character">`;
         playerTile.appendChild(player);
     }
     
@@ -152,7 +152,7 @@ function updateCharacters() {
     if (wizardTile) {
         const wizard = document.createElement('div');
         wizard.className = 'wizard';
-        wizard.innerHTML = `<img src="/images/wizard.gif" alt="Wizard character">`;
+        wizard.innerHTML = `<img src="images/wizard.gif" alt="Wizard character">`;
         wizardTile.appendChild(wizard);
     }
     
