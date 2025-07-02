@@ -90,9 +90,9 @@ To create a **playable 404 error page** that engages lost users with a pixel-the
 
 ## 🔗 Live Demo
 
-🎮 [Play the Game](https://your-username.github.io/your-repo-name/404.html)
+🎮 [Play the Game](https://saloni-081205.github.io/404-Quest-Game/)
 
-🚫 [Broken Link Example](https://your-username.github.io/your-repo-name/this-page-does-not-exist)
+🚫 [Broken Link Example](https://saloni-081205.github.io/404-Quest-Game/this-page-does-not-exist)
 
 ---
 
